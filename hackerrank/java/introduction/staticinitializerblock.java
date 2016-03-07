@@ -1,3 +1,5 @@
+// explores static types, static initializer blocks, flags
+
 import java.io*;
 import java.util*;
 import java.text*;

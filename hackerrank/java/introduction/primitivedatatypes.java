@@ -1,3 +1,6 @@
+// explores inconsistent behaviour of primitive data types in java
+// checks whether given numbers can fit in byte, short, integer and/or long data types
+
 import java.util.*;
 import java.io.*;
 class Solution{

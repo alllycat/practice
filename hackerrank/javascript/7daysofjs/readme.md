@@ -6,6 +6,19 @@
 
 ####**Day 2**: Introducing variables, arithmetic operators, switch statements, and objects.
 * **_Switch Statements_**: The switch statement evaluates an expression, matches the expression's value to a case clause, and executes the statements associated with that particular case (https://youtu.be/Z6O_XdfCBEo)
+```javascript
+//example switch statement
+switch (day) {  //day is an integer varying from 0 to 6.
+    case 6:
+        text = "Today is Saturday";
+        break;
+    case 0:
+        text = "Today is Sunday";
+        break;
+    default:
+        text = "Looking forward to the Weekend";
+} 
+```
 
 ####**Day 3**: Learn more about objects and arrays.
 

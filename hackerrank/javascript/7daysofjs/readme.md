@@ -19,6 +19,7 @@ switch (day) {  //day is an integer varying from 0 to 6.
         text = "Looking forward to the Weekend";
 } 
 ```
+* **_Advanced Variables_**: (https://mathiasbynens.be/notes/javascript-identifiers-es6)
 
 ####**Day 3**: Learn more about objects and arrays.
 

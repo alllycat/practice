@@ -86,3 +86,18 @@ Reverses the list.
 >>> print arr
 [9, 7, 3, 2, 1]
 ```
+
+
+#Tuples
+
+**Tuples** are a data structure like a list. The main difference is that tuples are *immutable*. Once created, tuples cannot be modified. This restricts their use because we cannot add, remove, or assign values. However, it gives us an advantage in space and time complexities.
+
+A common tuple use is swapping two numbers:
+
+```python
+a,b = b,a 
+```
+
+* Here **a,b** is a tuple, and it assigns itself the values of **b,a**.
+
+Another awesome use of tuples is *as keys in a dictionary*. In other words, *tuples are _hashable_*.

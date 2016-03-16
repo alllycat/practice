@@ -26,6 +26,9 @@ Sample Output
 [1, 5, 9, 10]
 [9, 5, 1]'''
 
+# The method strip() returns a copy of the string in which all chars have been stripped from the beginning and the end of the string 
+# (default whitespace characters)
+
 T = int(raw_input().strip())
 
 L = []

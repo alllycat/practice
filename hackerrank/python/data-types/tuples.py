@@ -1,3 +1,5 @@
+# python 3
+
 '''Task 
 You are given an integer NN on one line. The next line contains NN space separated integers. Create a tuple of those NN integers. Let's call it TT. 
 Compute hash(T) and print it.
@@ -10,3 +12,5 @@ The first line contains NN. The next line contains NN space separated integers.
 Output Format 
 Print the computed value.'''
 
+input()
+print(hash(tuple(map(int, input().strip().split(" ")))))

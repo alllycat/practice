@@ -1,9 +1,9 @@
 #Table of Contents
 
 * [Lists](#lists)
-* [Functional Programming Tools in Lists]
-* [Tuples]
-* [Sets]
+* [Functional Programming Tools in Lists](#func-tools-lists)
+* [Tuples](#tuples)
+* [Sets](#sets)
 
 <div id='lists'/>
 #Lists
@@ -94,6 +94,8 @@ Reverses the list.
 >>> print arr
 [9, 7, 3, 2, 1]
 ```
+
+<div id='func-list-tools'/>
 #Functional Programming Tools for Lists
 
 There are three built-in functions that are very useful when used with lists: **filter(), map(),** and **reduce()**.
@@ -161,6 +163,7 @@ A third argument can be passed to indicate the starting value. In this case the 
 ```
 * Don’t use this example’s definition of sum(): since summing numbers is such a common need, a built-in function sum(sequence) is already provided, and works exactly like this.
 
+<div id='tuples'/>
 #Tuples
 
 **Tuples** are a data structure like a list. The main difference is that tuples are *immutable*. Once created, tuples cannot be modified. This restricts their use because we cannot add, remove, or assign values. However, it gives us an advantage in space and time complexities.
@@ -175,59 +178,49 @@ a,b = b,a
 
 Another awesome use of tuples is *as keys in a dictionary*. In other words, *tuples are _hashable_*.
 
-#Sets - TO FORMAT SOON
+<div id='sets'/>
+#Sets
 
-Let's learn about a new datatype, sets. You are given 22 sets of integers MM and NN. You have to print their symmetric difference in ascending order. The term symmetric difference indicates those values that exist in either MM or NN but do not exist in both.
+Let's learn about a new datatype, sets.
 
-Input Format
-
-The first line of input contains MM. The next line contains MM space separated integers. The next line contains NN. The following line contains NN space separated integers.
-
-Output Format
-
-Output the symmetric difference integers in ascending order, one per line.
-
-Sample Input
-
-4
-2 4 5 9
-4
-2 4 11 12
-Sample Output
-
-5
-9
-11
-12
-Concept
+####Concept
 
 If the inputs are given on one line separated by a space character, use split() to get the separate values in the form of a list.
 
+```python
 >> a = raw_input()
 5 4 3 2
 >> lis = a.split()
 >> print (lis)
 ['5', '4', '3', '2']
+```
+
 If the list values are all integer types, use the map() method to convert all the strings to integers.
 
+```python
 >> newlis = list(map(int, lis))
 >> print (newlis)
 [5, 4, 3, 2]
+```
+
 Sets are an unordered bag of unique values. A single set contains values of any immutable data type. 
 
-CREATING SETS
+####CREATING SETS
 
+```python
 >> myset = {1, 2} # Directly assigning values to a set
 >> myset = set()  # Initializing a set
 >> myset = set(['a', 'b']) # Creating a set from a list
 >> myset
 {'a', 'b'}
+```
 
 
-MODIFYING SETS
+####MODIFYING SETS
 
 Using the add() function:
 
+```python
 >> myset.add('c')
 >> myset
 {'a', 'c', 'b'}
@@ -235,9 +228,11 @@ Using the add() function:
 >> myset.add((5, 4))
 >> myset
 {'a', 'c', 'b', (5, 4)}
+```
 
 Using the update() function:
 
+```python
 >> myset.update([1, 2, 3, 4]) # update() only works for iterable objects
 >> myset
 {'a', 1, 'c', 'b', 4, 2, (5, 4), 3}
@@ -247,21 +242,24 @@ Using the update() function:
 >> myset.update({1, 6}, [5, 13])
 >> myset
 {'a', 1, 'c', 'b', 4, 5, 6, 7, 8, 2, (5, 4), 13, 3}
+```
 
-REMOVING ITEMS 
+####REMOVING ITEMS 
 
 Both the discard() and remove() functions take a single value as an argument and removes that value from the set. If that value is not present, discard() does nothing, but remove() will raise a KeyError exception.
 
+```python
 >> myset.discard(10)
 >> myset
 {'a', 1, 'c', 'b', 4, 5, 7, 8, 2, 12, (5, 4), 13, 11, 3}
 >> myset.remove(13)
 >> myset
 {'a', 1, 'c', 'b', 4, 5, 7, 8, 2, 12, (5, 4), 11, 3}
-
+```
 
 COMMON SET OPERATIONS Using union(), intersection() and difference() functions. 
 
+```python
 >> a = {2, 4, 5, 9}
 >> b = {2, 4, 11, 12}
 >> a.union(b) # Values which exist in a or b
@@ -270,12 +268,15 @@ COMMON SET OPERATIONS Using union(), intersection() and difference() functions.
 {2, 4}
 >> a.difference(b) # Values which exist in a but not in b
 {9, 5}
+```
 
 The union() and intersection() functions are symmetric methods: 
 
+```python
 >> a.union(b) == b.union(a)
 True
 >> a.intersection(b) == b.intersection(a)
 True
 >> a.difference(b) == b.difference(a)
 False
+```

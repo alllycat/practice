@@ -1,7 +1,7 @@
 #Table of Contents
 
 * [Lists](#lists)
-* [Functional Programming Tools in Lists](#func-tools-lists)
+* [Functional Programming Tools in Lists](#func-list-tools)
 * [Tuples](#tuples)
 * [Sets](#sets)
 
